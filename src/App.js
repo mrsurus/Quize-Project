@@ -1,13 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import { createBrowserHistory } from '@remix-run/router';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Main from './Components/Layouts/Main';
+import Home from './Components/Home/Home';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Main></Main>,
+      children: [
+        {
+          path: 'home',
+          element:<Home></Home>
+        }
+      ]
+    }
+  ])
   return (
-    <div className="App">
-     <h1>Hello world</h1>
-     <h2>Our set up is ready and we are checking our git push</h2>
-     <h3>Is everyThink ok?</h3>
-    </div>
+    <RouterProvider router={router}></RouterProvider>
   );
 }
 
