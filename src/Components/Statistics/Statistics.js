@@ -12,8 +12,8 @@ const Statistics = () => {
     return (
         <div>
             <ResponsiveContainer   width="100%" height="100">
-                    <div className='mt-16'>
-                <LineChart width={500}  height={300}  data={data}
+                    <div className='mt-16 bg-green-500'>
+                <LineChart width={500}  height={400}  data={data}
                  margin={{
                     top: 5,
                     right: 30,
