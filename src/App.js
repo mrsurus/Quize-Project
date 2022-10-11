@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import Swal from 'sweetalert2'
 import './App.css';
 import { createBrowserHistory } from '@remix-run/router';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';

@@ -1,11 +1,15 @@
 import { EyeIcon } from '@heroicons/react/24/solid';
 import React from 'react';
+import Swal from 'sweetalert2'
+
 
 const Quiz = ({ quiz }) => {
     const { question, options, correctAnswer } = quiz
     const showAswer = () => {
         console.log(correctAnswer);
-        alert ('wrong answer')
+        Swal.fire(`The correct answer is:-
+        
+         ${correctAnswer}`)
     }
     return (
         <div className=' my-7 mx-10 p-7 shadow-2xl relative'>
