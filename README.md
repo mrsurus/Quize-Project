@@ -7,7 +7,7 @@ api link: https://openapi.programming-hero.com/api/quiz
 
 
 
-##Details API link
+## Details API link
 
 https://openapi.programming-hero.com/api/quiz/${id}
 
