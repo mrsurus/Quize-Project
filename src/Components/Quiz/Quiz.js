@@ -32,10 +32,10 @@ const Quiz = ({ quiz }) => {
     }
     return (
         <div className=' my-7 mx-10 p-7 shadow-2xl relative'>
-            <p>{question}</p>
+            <p className='text-2xl font-bold'>{question}</p>
             <EyeIcon onClick={showAswer} className="h-6 w-6 text-white-500 absolute left-7 top-5"></EyeIcon>
             
-            <div className='display: grid grid-cols-2 gap-3 my-5'>
+            <div className='display: grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 my-5'>
                 {options.map(option =>
                     <div 
                     key={option.slice(2)}

@@ -10,7 +10,7 @@ const Home = () => {
             <div className='text-center'>
                 <p className='text-3xl bg-orange-300 my-3 mx-8 rounded py-4'>Play Quiz and win award.</p>
             </div>
-            <div className='display  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-3 mx-8 my-10'>
+            <div className='display  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-5 mx-8 my-24'>
                 {
                     topics.map(topic => <Topic
                         key={topic.id}
