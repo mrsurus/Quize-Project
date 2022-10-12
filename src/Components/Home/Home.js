@@ -9,11 +9,11 @@ const Home = () => {
     const topics = topicsData.data
     return (
         <div>
-            <div className='  display: flex text-white bg-violet-500 my-3 mx-8 rounded mt-16 py-4 items-center '>
-                <div className='w-1/2 '>
-                    <img className='w-1/3 ml-24 ' src={pic} alt="" />
+            <div className=' p-2  display: grid md:grid-cols-2   text-white bg-violet-500 my-3 mx-8 rounded mt-16 py-4 items-center '>
+                <div className='sm:w-1/2 w-full '>
+                    <img className='w-full  ml-0 md:ml-24 h-44 sm:w-3/4' src={pic} alt="" />
                 </div>
-               <div className='w-1/2 text-center'> 
+               <div className='w-full text-center md:w-1/2 my-16 sm:my-0 '> 
                     <p className='text-3xl content-center'>Play Quiz and win award</p>
                </div>
             </div>
